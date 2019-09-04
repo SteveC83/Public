@@ -74,7 +74,7 @@ resource "azurerm_automation_dsc_configuration" "GlobalDscConfig" {
   resource_group_name     = "${var.g-core-rg}"
   automation_account_name = "${azurerm_automation_account.test.name}"
   location                = "${var.g-location}"
-  content_embedded        = "${file("./GlobalDscConfig.PS1")}"
+  content_embedded        = "${file("./GlobalDscConfig.ps1")}"
 } 
 resource "azurerm_automation_dsc_nodeconfiguration" "GlobalDscConfig" {
   name                    = "GlobalDscConfig.localhost"
