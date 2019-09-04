@@ -1,0 +1,2 @@
+$endpoint = (Get-AzureRmAutomationRegistrationInfo -ResourceGroupName rg-dev-core-mgmt -AutomationAccountName testDSCAccount).Endpoint
+$key = (Get-AzureRmAutomationRegistrationInfo -ResourceGroupName rg-dev-core-mgmt -AutomationAccountName testDSCAccount).key

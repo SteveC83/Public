@@ -1,0 +1,3050 @@
+/*
+@TargetNode='localhost'
+@GeneratedBy=scollinsonmhs
+@GenerationDate=08/30/2019 17:36:00
+@GenerationHost=GR2SMEMMGTV01
+*/
+
+instance of MSFT_TimeZone as $MSFT_TimeZone1ref
+{
+TimeZone = "UTC";
+ ModuleVersion = "6.5.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::22::9::TimeZone";
+ ModuleName = "ComputerManagementDsc";
+ ResourceID = "[TimeZone]SysTimeZone";
+ IsSingleInstance = "Yes";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of cChocoInstaller as $cChocoInstaller1ref
+{
+ModuleVersion = "2.4.0.0";
+ ModuleName = "cChoco";
+ InstallDir = "C:\\Choco";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::29::9::cChocoinstaller";
+ ResourceID = "[cChocoInstaller]Install";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_NetConnectionProfile as $MSFT_NetConnectionProfile1ref
+{
+ModuleVersion = "7.3.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::87::9::NetConnectionProfile";
+ ModuleName = "NetworkingDsc";
+ InterfaceAlias = "Ethernet";
+ ResourceID = "[NetConnectionProfile]DefaultConnectionProfile";
+ NetworkCategory = "Private";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment1ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "$null"
+};
+ Policy = "Access_Credential_Manager_as_a_trusted_caller";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::97::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]AccessCredentialManagerasatrustedcaller";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment2ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "Administrators,Authenticated Users"
+};
+ Policy = "Access_this_computer_from_the_network";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::103::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Accessthiscomputerfromthenetwork";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment3ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "$null"
+};
+ Policy = "Act_as_part_of_the_operating_system";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::109::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Actaspartoftheoperatingsystem";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment4ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "Administrators, LOCAL SERVICE, NETWORK SERVICE"
+};
+ Policy = "Adjust_memory_quotas_for_a_process";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::115::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Adjustmemoryquotasforaprocess";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment5ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "Administrators"
+};
+ Policy = "Allow_log_on_locally";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::121::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Allowlogonlocally";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment6ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "Administrators"
+};
+ Policy = "Allow_log_on_through_Remote_Desktop_Services";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::127::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]AllowlogonthroughRemoteDesktopServices";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment7ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "Administrators"
+};
+ Policy = "Back_up_files_and_directories";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::133::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Backupfilesanddirectories";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment8ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "Administrators,LOCAL SERVICE"
+};
+ Policy = "Change_the_system_time";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::139::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Changethesystemtime";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment9ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "Administrators,LOCAL SERVICE"
+};
+ Policy = "Change_the_time_zone";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::145::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Changethetimezone";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment10ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "Administrators"
+};
+ Policy = "Create_a_pagefile";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::151::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Createapagefile";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment11ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "$null"
+};
+ Policy = "Create_a_token_object";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::157::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Createatokenobject";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment12ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "Administrators,LOCAL SERVICE, NETWORK SERVICE, SERVICE"
+};
+ Policy = "Create_global_objects";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::163::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Createglobalobjects";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment13ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "$null"
+};
+ Policy = "Create_permanent_shared_objects";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::169::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Createpermanentsharedobjects";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment14ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "Administrators"
+};
+ Policy = "Create_symbolic_links";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::175::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Createsymboliclinks";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment15ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "Administrators"
+};
+ Policy = "Debug_programs";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::181::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Debugprograms";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment16ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "$null"
+};
+ Policy = "Deny_access_to_this_computer_from_the_network";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::187::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Denyaccesstothiscomputerfromthenetwork";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment17ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "Guests"
+};
+ Policy = "Deny_log_on_as_a_batch_job";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::193::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Denylogonasabatchjob";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment18ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "Guests"
+};
+ Policy = "Deny_log_on_as_a_service";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::199::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Denylogonasaservice";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment19ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "Guests"
+};
+ Policy = "Deny_log_on_locally";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::205::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Denylogonlocally";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment20ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "Guests"
+};
+ Policy = "Deny_log_on_through_Remote_Desktop_Services";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::211::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]DenylogonthroughRemoteDesktopServices";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment21ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "$null"
+};
+ Policy = "Enable_computer_and_user_accounts_to_be_trusted_for_delegation";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::217::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Enablecomputeranduseraccountstobetrustedfordelegation";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment22ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "Administrators"
+};
+ Policy = "Force_shutdown_from_a_remote_system";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::223::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Forceshutdownfromaremotesystem";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment23ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "LOCAL SERVICE,NETWORK SERVICE"
+};
+ Policy = "Generate_security_audits";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::229::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Generatesecurityaudits";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment24ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "Administrators,LOCAL SERVICE,NETWORK SERVICE,SERVICE"
+};
+ Policy = "Impersonate_a_client_after_authentication";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::235::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Impersonateaclientafterauthentication";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment25ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "Administrators"
+};
+ Policy = "Increase_scheduling_priority";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::241::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Increaseschedulingpriority";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment26ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "Administrators"
+};
+ Policy = "Load_and_unload_device_drivers";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::247::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Loadandunloaddevicedrivers";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment27ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "$null"
+};
+ Policy = "Lock_pages_in_memory";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::253::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Lockpagesinmemory";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment28ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "Administrators"
+};
+ Policy = "Manage_auditing_and_security_log";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::259::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Manageauditingandsecuritylog";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment29ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "$null"
+};
+ Policy = "Modify_an_object_label";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::265::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Modifyanobjectlabel";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment30ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "Administrators"
+};
+ Policy = "Modify_firmware_environment_values";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::271::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Modifyfirmwareenvironmentvalues";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment31ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "Administrators"
+};
+ Policy = "Perform_volume_maintenance_tasks";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::277::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Performvolumemaintenancetasks";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment32ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "Administrators"
+};
+ Policy = "Profile_single_process";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::283::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Profilesingleprocess";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment33ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "Administrators,NT SERVICE\\WdiServiceHost"
+};
+ Policy = "Profile_system_performance";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::289::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Profilesystemperformance";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment34ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "LOCALSERVICE, NETWORK SERVICE"
+};
+ Policy = "Replace_a_process_level_token";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::295::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Replaceaprocessleveltoken";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment35ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "Administrators"
+};
+ Policy = "Restore_files_and_directories";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::301::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Restorefilesanddirectories";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment36ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "Administrators"
+};
+ Policy = "Shut_down_the_system";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::307::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Shutdownthesystem";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_UserRightsAssignment as $MSFT_UserRightsAssignment37ref
+{
+ModuleVersion = "2.9.0.0";
+ Identity = {
+    "Administrators"
+};
+ Policy = "Take_ownership_of_files_or_other_objects";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::313::9::UserRightsAssignment";
+ ModuleName = "SecurityPolicyDsc";
+ ResourceID = "[UserRightsAssignment]Takeownershipoffilesorotherobjects";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_SecurityOption as $MSFT_SecurityOption1ref
+{
+Network_security_LDAP_client_signing_requirements = "Negotiate Signing";
+ Interactive_logon_Require_Domain_Controller_authentication_to_unlock_workstation = "Enabled";
+ Audit_Force_audit_policy_subcategory_settings_Windows_Vista_or_later_to_override_audit_policy_category_settings = "Enabled";
+ Devices_Allowed_to_format_and_eject_removable_media = "Administrators";
+ Audit_Shut_down_system_immediately_if_unable_to_log_security_audits = "Disabled";
+ User_Account_Control_Allow_UIAccess_applications_to_prompt_for_elevation_without_using_the_secure_desktop = "Disabled";
+ Accounts_Block_Microsoft_accounts = "This policy is disabled";
+ Name = "AccountSecurityOptions";
+ Network_access_Restrict_anonymous_access_to_Named_Pipes_and_Shares = "Enabled";
+ Shutdown_Allow_system_to_be_shut_down_without_having_to_log_on = "Disabled";
+ Interactive_logon_Smart_card_removal_behavior = "Lock workstation";
+ Network_access_Allow_anonymous_SID_Name_translation = "Disabled";
+ Network_access_Named_Pipes_that_can_be_accessed_anonymously = NULL;
+ Microsoft_network_server_Disconnect_clients_when_logon_hours_expire = "Enabled";
+ Microsoft_network_client_Digitally_sign_communications_if_server_agrees = "Enabled";
+ Accounts_Limit_local_account_use_of_blank_passwords_to_console_logon_only = "Enabled";
+ Domain_member_Digitally_encrypt_secure_channel_data_when_possible = "Enabled";
+ Domain_member_Disable_machine_account_password_changes = "Disabled";
+ Domain_member_Digitally_sign_secure_channel_data_when_possible = "Enabled";
+ System_objects_Strengthen_default_permissions_of_internal_system_objects_eg_Symbolic_Links = "Enabled";
+ Interactive_logon_Do_not_display_last_user_name = "Enabled";
+ ResourceID = "[SecurityOption]AccountSecurityOptions";
+ Network_access_Sharing_and_security_model_for_local_accounts = "Classic - Local users authenticate as themselves";
+ Microsoft_network_client_Digitally_sign_communications_always = "Enabled";
+ Network_access_Shares_that_can_be_accessed_anonymously = NULL;
+ System_objects_Require_case_insensitivity_for_non_Windows_subsystems = "Enabled";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::319::9::SecurityOption";
+ Accounts_Administrator_account_status = "Enabled";
+ User_Account_Control_Detect_application_installations_and_prompt_for_elevation = "Enabled";
+ User_Account_Control_Run_all_administrators_in_Admin_Approval_Mode = "Enabled";
+ ModuleVersion = "2.9.0.0";
+ User_Account_Control_Virtualize_file_and_registry_write_failures_to_per_user_locations = "Enabled";
+ Devices_Prevent_users_from_installing_printer_drivers = "Enabled";
+ Interactive_logon_Prompt_user_to_change_password_before_expiration = "10";
+ Network_security_Do_not_store_LAN_Manager_hash_value_on_next_password_change = "Enabled";
+ Microsoft_network_client_Send_unencrypted_password_to_third_party_SMB_servers = "Disabled";
+ Accounts_Guest_account_status = "Disabled";
+ Domain_member_Require_strong_Windows_2000_or_later_session_key = "Enabled";
+ ModuleName = "SecurityPolicyDsc";
+ Interactive_logon_Message_text_for_users_attempting_to_log_on = "This system is for the use of authorized users only. Individuals using this computer system without authority\",\" or in excess of their authority\",\" are subject to having all of their activities on this system monitored and recorded by system personnel. In the course of monitoring individuals improperly using this system\",\" or in the course of system maintenance\",\" the activities of authorized users may also be monitored. Anyone using this system expressly consents to such monitoring and is advised that if such monitoring reveals possible evidence of criminal activity\",\" system personnel may provide the evidence of such monitoring to law enforcement officials.";
+ Domain_member_Digitally_encrypt_or_sign_secure_channel_data_always = "Enabled";
+ Network_access_Do_not_allow_anonymous_enumeration_of_SAM_accounts = "Enabled";
+ Network_access_Let_Everyone_permissions_apply_to_anonymous_users = "Disabled";
+ Domain_member_Maximum_machine_account_password_age = "30";
+ Microsoft_network_server_Amount_of_idle_time_required_before_suspending_session = "15";
+ Interactive_logon_Do_not_require_CTRL_ALT_DEL = "Disabled";
+ Interactive_logon_Message_title_for_users_attempting_to_log_on = "WARNING! AUTHORISED USERS ONLY";
+ User_Account_Control_Switch_to_the_secure_desktop_when_prompting_for_elevation = "Enabled";
+ Interactive_logon_Machine_inactivity_limit = "900";
+ User_Account_Control_Only_elevate_UIAccess_applications_that_are_installed_in_secure_locations = "Enabled";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource1ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Biometrics\\FacialFeatures";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::396::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]EnhancedAntiSpoofing";
+ ValueName = "EnhancedAntiSpoofing";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource2ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\InputPersonalization";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::405::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AllowInputPersonalization";
+ ValueName = "AllowInputPersonalization";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource3ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Internet Explorer\\Feeds";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::414::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]DisableEnclosureDownload";
+ ValueName = "DisableEnclosureDownload";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource4ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Main";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::423::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]Cookies";
+ ValueName = "Cookies";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource5ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\MicrosoftEdge\\Main";
+ ValueType = "String";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::432::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]FormSuggest Passwords";
+ ValueName = "FormSuggest Passwords";
+ ValueData = {
+    "no"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource6ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\MicrosoftEdge\\PhishingFilter";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::441::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]EnabledV9";
+ ValueName = "EnabledV9";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource7ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\MicrosoftEdge\\SearchScopes";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::450::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]ShowSearchSuggestionsGlobal";
+ ValueName = "ShowSearchSuggestionsGlobal";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource8ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CloudContent";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::459::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]DisableWindowsConsumerFeatures";
+ ValueName = "DisableWindowsConsumerFeatures";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource9ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Connect";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::468::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]RequirePinForPairing";
+ ValueName = "RequirePinForPairing";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource10ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CredUI";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::477::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]DisablePasswordReveal";
+ ValueName = "DisablePasswordReveal";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource11ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DataCollection";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::486::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AllowTelemetry";
+ ValueName = "AllowTelemetry";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource12ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DataCollection";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::495::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]DoNotShowFeedbackNotifications";
+ ValueName = "DoNotShowFeedbackNotifications";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource13ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\EventLog\\Application";
+ ValueType = "String";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::504::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]Retention";
+ ValueName = "Retention";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource14ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\EventLog\\Application";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::513::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]MaxSize";
+ ValueName = "MaxSize";
+ ValueData = {
+    "32768"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource15ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\EventLog\\Security";
+ ValueType = "String";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::522::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]Retention1";
+ ValueName = "Retention";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource16ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\EventLog\\Security";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::531::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]MaxSize1";
+ ValueName = "MaxSize";
+ ValueData = {
+    "196608"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource17ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\EventLog\\Setup";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::540::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]MaxSize2";
+ ValueName = "MaxSize";
+ ValueData = {
+    "32768"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource18ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\EventLog\\Setup";
+ ValueType = "String";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::549::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]Retention2";
+ ValueName = "Retention";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource19ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\EventLog\\System";
+ ValueType = "String";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::558::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]Retention3";
+ ValueName = "Retention";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource20ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\EventLog\\System";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::567::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]MaxSize3";
+ ValueName = "MaxSize";
+ ValueData = {
+    "32768"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource21ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Explorer";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::576::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]NoAutoplayfornonVolume";
+ ValueName = "NoAutoplayfornonVolume";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource22ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Explorer";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::585::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]NoDataExecutionPrevention";
+ ValueName = "NoDataExecutionPrevention";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource23ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Explorer";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::594::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]NoHeapTerminationOnCorruption";
+ ValueName = "NoHeapTerminationOnCorruption";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource24ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Group Policy\\{35378EAC-683F-11D2-A89A-00C04FBBCFA2}\n";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::603::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]NoBackgroundPolicy";
+ ValueName = "NoBackgroundPolicy";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource25ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Group Policy\\{35378EAC-683F-11D2-A89A-00C04FBBCFA2}\n";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::613::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]NoGPOListChanges";
+ ValueName = "NoGPOListChanges";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource26ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Installer";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::623::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]EnableUserControl";
+ ValueName = "EnableUserControl";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource27ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Installer";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::632::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AlwaysInstallElevated";
+ ValueName = "AlwaysInstallElevated";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource28ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\LanmanWorkstation";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::641::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AllowInsecureGuestAuth";
+ ValueName = "AllowInsecureGuestAuth";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource29ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Network Connections";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::650::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]NC_AllowNetBridge_NLA";
+ ValueName = "NC_AllowNetBridge_NLA";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource30ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Network Connections";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::659::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]NC_ShowSharedAccessUI";
+ ValueName = "NC_ShowSharedAccessUI";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource31ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Network Connections";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::668::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]NC_StdDomainUserSetLocation";
+ ValueName = "NC_StdDomainUserSetLocation";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource32ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\NetworkProvider\\HardenedPaths";
+ ValueType = "String";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::677::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]\\\\*\\NETLOGON";
+ ValueName = "\\\\*\\NETLOGON";
+ ValueData = {
+    "RequireMutualAuthentication=1,RequireIntegrity=1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource33ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\NetworkProvider\\HardenedPaths";
+ ValueType = "String";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::686::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]\\\\*\\SYSVOL";
+ ValueName = "\\\\*\\SYSVOL";
+ ValueData = {
+    "RequireMutualAuthentication=1,RequireIntegrity=1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource34ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\OneDrive";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::695::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]DisableFileSyncNGSC";
+ ValueName = "DisableFileSyncNGSC";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource35ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Personalization";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::704::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]NoLockScreenCamera";
+ ValueName = "NoLockScreenCamera";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource36ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Personalization";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::713::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]NoLockScreenSlideshow";
+ ValueName = "NoLockScreenSlideshow";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource37ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\PowerShell\\ScriptBlockLogging";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::722::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]EnableScriptBlockLogging";
+ ValueName = "EnableScriptBlockLogging";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource38ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\PowerShell\\ScriptBlockLogging";
+ ValueType = "String";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::731::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]EnableScriptBlockInvocationLogging";
+ ValueName = "EnableScriptBlockInvocationLogging";
+ ValueData = {
+    " "
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource39ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\PowerShell\\Transcription";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::740::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]EnableTranscripting";
+ ValueName = "EnableTranscripting";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource40ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\PowerShell\\Transcription";
+ ValueType = "String";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::749::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]OutputDirectory";
+ ValueName = "OutputDirectory";
+ ValueData = {
+    " "
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource41ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\PowerShell\\Transcription";
+ ValueType = "String";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::758::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]EnableInvocationHeader";
+ ValueName = "EnableInvocationHeader";
+ ValueData = {
+    " "
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource42ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\PreviewBuilds";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::767::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]EnableConfigFlighting";
+ ValueName = "EnableConfigFlighting";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource43ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\PreviewBuilds";
+ ValueType = "String";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::776::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]EnableExperimentation";
+ ValueName = "EnableExperimentation";
+ ValueData = {
+    " "
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource44ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\PreviewBuilds";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::785::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AllowBuildPreview";
+ ValueName = "AllowBuildPreview";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource45ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::794::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]EnableCdp";
+ ValueName = "EnableCdp";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource46ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::803::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]BlockUserFromShowingAccountDetailsOnSignin";
+ ValueName = "BlockUserFromShowingAccountDetailsOnSignin";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource47ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::812::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]DontDisplayNetworkSelectionUI";
+ ValueName = "DontDisplayNetworkSelectionUI";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource48ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::821::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]DontEnumerateConnectedUsers";
+ ValueName = "DontEnumerateConnectedUsers";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource49ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::830::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]EnumerateLocalUsers";
+ ValueName = "EnumerateLocalUsers";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource50ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::839::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]DisableLockScreenAppNotifications";
+ ValueName = "DisableLockScreenAppNotifications";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource51ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::848::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AllowDomainPINLogon";
+ ValueName = "AllowDomainPINLogon";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource52ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::857::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]EnableSmartScreen";
+ ValueName = "EnableSmartScreen";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource53ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WcmSvc\\GroupPolicy";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::866::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]fMinimizeConnections";
+ ValueName = "fMinimizeConnections";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource54ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Windows Search";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::875::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AllowCortana";
+ ValueName = "AllowCortana";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource55ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Windows Search";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::884::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AllowCortanaAboveLock";
+ ValueName = "AllowCortanaAboveLock";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource56ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Windows Search";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::893::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AllowIndexingEncryptedStoresOrItems";
+ ValueName = "AllowIndexingEncryptedStoresOrItems";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource57ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Windows Search";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::902::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AllowSearchToUseLocation";
+ ValueName = "AllowSearchToUseLocation";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource58ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::911::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]NoAutoUpdate";
+ ValueName = "NoAutoUpdate";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource59ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::920::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AUOptions";
+ ValueName = "AUOptions";
+ ValueData = {
+    "5"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource60ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU";
+ ValueType = "String";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::929::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AutomaticMaintenanceEnabled";
+ ValueName = "AutomaticMaintenanceEnabled";
+ ValueData = {
+    " "
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource61ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::938::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]ScheduledInstallDay";
+ ValueName = "ScheduledInstallDay";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource62ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::947::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]ScheduledInstallTime";
+ ValueName = "ScheduledInstallTime";
+ ValueData = {
+    "3"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource63ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU";
+ ValueType = "String";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::956::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AllowMUUpdateService";
+ ValueName = "AllowMUUpdateService";
+ ValueData = {
+    " "
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource64ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::965::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]NoAutoRebootWithLoggedOnUsers";
+ ValueName = "NoAutoRebootWithLoggedOnUsers";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource65ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::974::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]DeferFeatureUpdates";
+ ValueName = "DeferFeatureUpdates";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource66ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::983::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]BranchReadinessLevel";
+ ValueName = "BranchReadinessLevel";
+ ValueData = {
+    "32"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource67ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::992::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]DeferFeatureUpdatesPeriodInDays";
+ ValueName = "DeferFeatureUpdatesPeriodInDays";
+ ValueData = {
+    "180"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource68ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate";
+ ValueType = "String";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1001::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]PauseFeatureUpdatesStartTime";
+ ValueName = "PauseFeatureUpdatesStartTime";
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource69ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1010::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]DeferQualityUpdates";
+ ValueName = "DeferQualityUpdates";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource70ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1019::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]DeferQualityUpdatesPeriodInDays";
+ ValueName = "DeferQualityUpdatesPeriodInDays";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource71ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate";
+ ValueType = "String";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1028::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]PauseQualityUpdatesStartTime";
+ ValueName = "PauseQualityUpdatesStartTime";
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource72ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WinRM\\Client";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1037::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AllowBasic";
+ ValueName = "AllowBasic";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource73ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WinRM\\Client";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1046::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AllowUnencryptedTraffic";
+ ValueName = "AllowUnencryptedTraffic";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource74ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WinRM\\Client";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1055::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AllowDigest";
+ ValueName = "AllowDigest";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource75ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WinRM\\Service";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1064::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AllowBasic1";
+ ValueName = "AllowBasic";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource76ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WinRM\\Service";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1073::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AllowUnencryptedTraffic1";
+ ValueName = "AllowUnencryptedTraffic";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource77ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WinRM\\Service";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1082::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]DisableRunAs";
+ ValueName = "DisableRunAs";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource78ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows NT\\DNSClient";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1091::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]EnableMulticast";
+ ValueName = "EnableMulticast";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource79ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows NT\\MitigationOptions";
+ ValueType = "String";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1100::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]MitigationOptions_FontBocking";
+ ValueName = "MitigationOptions_FontBocking";
+ ValueData = {
+    "1000000000000"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource80ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows NT\\Rpc";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1109::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]EnableAuthEpResolution";
+ ValueName = "EnableAuthEpResolution";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource81ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows NT\\Terminal Services";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1118::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]DisablePasswordSaving";
+ ValueName = "DisablePasswordSaving";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource82ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows NT\\Terminal Services";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1127::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]fDisableCdm";
+ ValueName = "fDisableCdm";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource83ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows NT\\Terminal Services";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1136::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]MinEncryptionLevel";
+ ValueName = "MinEncryptionLevel";
+ ValueData = {
+    "3"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource84ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows NT\\Terminal Services";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1145::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]fEncryptRPCTraffic";
+ ValueName = "fEncryptRPCTraffic";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource85ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows NT\\Terminal Services";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1154::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]fPromptForPassword";
+ ValueName = "fPromptForPassword";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource86ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows NT\\Terminal Services";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1163::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]DeleteTempDirsOnExit";
+ ValueName = "DeleteTempDirsOnExit";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource87ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows NT\\Terminal Services";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1172::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]PerSessionTempDir";
+ ValueName = "PerSessionTempDir";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource88ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\DomainProfile\\Logging";
+ ValueType = "String";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1181::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]LogFilePath";
+ ValueName = "LogFilePath";
+ ValueData = {
+    "%systemroot%\\system32\\logfiles\\firewall\\domainfw.log"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource89ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\DomainProfile\\Logging";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1190::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]LogFileSize";
+ ValueName = "LogFileSize";
+ ValueData = {
+    "16384"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource90ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\DomainProfile\\Logging";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1199::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]LogDroppedPackets";
+ ValueName = "LogDroppedPackets";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource91ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\DomainProfile\\Logging";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1208::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]LogSuccesssfulConnections";
+ ValueName = "LogSuccesssfulConnections";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource92ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\DomainProfile";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1217::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]EnableFirewall";
+ ValueName = "EnableFirewall";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource93ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\DomainProfile";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1226::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]DefaultOutboundAction";
+ ValueName = "DefaultOutboundAction";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource94ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\DomainProfile";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1235::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]DefaultInboundAction";
+ ValueName = "DefaultInboundAction";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource95ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\DomainProfile";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1244::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]DisableNotifications";
+ ValueName = "DisableNotifications";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource96ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\DomainProfile";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1253::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AllowLocalPolicyMerge";
+ ValueName = "AllowLocalPolicyMerge";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource97ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\DomainProfile";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1262::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AllowLocalIPsecPolicyMerge";
+ ValueName = "AllowLocalIPsecPolicyMerge";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource98ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\PrivateProfile\\Logging";
+ ValueType = "String";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1271::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]LogFilePath1";
+ ValueName = "LogFilePath";
+ ValueData = {
+    "%systemroot%\\system32\\logfiles\\firewall\\privatefw.log"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource99ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\PrivateProfile\\Logging";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1280::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]LogFileSize1";
+ ValueName = "LogFileSize";
+ ValueData = {
+    "16384"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource100ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\PrivateProfile\\Logging";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1289::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]LogDroppedPackets1";
+ ValueName = "LogDroppedPackets";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource101ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\PrivateProfile\\Logging";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1298::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]LogSuccesssfulConnections1";
+ ValueName = "LogSuccesssfulConnections";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource102ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\PrivateProfile";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1307::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]DisableNotifications1";
+ ValueName = "DisableNotifications";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource103ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\PrivateProfile";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1316::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AllowLocalPolicyMerge1";
+ ValueName = "AllowLocalPolicyMerge";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource104ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\PrivateProfile";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1325::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AllowLocalIPsecPolicyMerge1";
+ ValueName = "AllowLocalIPsecPolicyMerge";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource105ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\PrivateProfile";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1334::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]EnableFirewall1";
+ ValueName = "EnableFirewall";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource106ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\PrivateProfile";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1343::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]DefaultOutboundAction1";
+ ValueName = "DefaultOutboundAction";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource107ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\PrivateProfile";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1352::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]DefaultInboundAction1";
+ ValueName = "DefaultInboundAction";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource108ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\PublicProfile\\Logging";
+ ValueType = "String";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1361::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]LogFilePath2";
+ ValueName = "LogFilePath";
+ ValueData = {
+    "%systemroot%\\system32\\logfiles\\firewall\\publicfw.log"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource109ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\PublicProfile\\Logging";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1370::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]LogFileSize2";
+ ValueName = "LogFileSize";
+ ValueData = {
+    "16384"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource110ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\PublicProfile\\Logging";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1379::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]LogDroppedPackets2";
+ ValueName = "LogDroppedPackets";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource111ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\PublicProfile\\Logging";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1388::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]LogSuccesssfulConnections2";
+ ValueName = "LogSuccesssfulConnections";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource112ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\PublicProfile";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1397::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]DisableNotifications2";
+ ValueName = "DisableNotifications";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource113ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\PublicProfile";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1406::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AllowLocalPolicyMerge2";
+ ValueName = "AllowLocalPolicyMerge";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource114ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\PublicProfile";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1415::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AllowLocalIPsecPolicyMerge2";
+ ValueName = "AllowLocalIPsecPolicyMerge";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource115ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\PublicProfile";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1424::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]EnableFirewall2";
+ ValueName = "EnableFirewall";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource116ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\PublicProfile";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1433::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]DefaultOutboundAction2";
+ ValueName = "DefaultOutboundAction";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource117ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsFirewall\\PublicProfile";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1442::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]DefaultInboundAction2";
+ ValueName = "DefaultInboundAction";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource118ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsInkWorkspace";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1451::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AllowWindowsInkWorkspace";
+ ValueName = "AllowWindowsInkWorkspace";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource119ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsStore";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1460::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AutoDownload";
+ ValueName = "AutoDownload";
+ ValueData = {
+    "4"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource120ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsStore";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1469::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]DisableOSUpgrade";
+ ValueName = "DisableOSUpgrade";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource121ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft Services\\AdmPwd";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1478::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]PwdExpirationProtectionEnabled";
+ ValueName = "PwdExpirationProtectionEnabled";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource122ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft Services\\AdmPwd";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1487::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AdmPwdEnabled";
+ ValueName = "AdmPwdEnabled";
+ ValueData = {
+    "1"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource123ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft Services\\AdmPwd";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1496::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]PasswordComplexity";
+ ValueName = "PasswordComplexity";
+ ValueData = {
+    "4"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource124ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft Services\\AdmPwd";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1505::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]PasswordLength";
+ ValueName = "PasswordLength";
+ ValueData = {
+    "15"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource125ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft Services\\AdmPwd";
+ ValueType = "Dword";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1514::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]PasswordAgeDays";
+ ValueName = "PasswordAgeDays";
+ ValueData = {
+    "30"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource126ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon";
+ ValueType = "String";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1523::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]AutoAdminLogon";
+ ValueName = "AutoAdminLogon";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource127ref
+{
+Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services";
+ ValueType = "String";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1532::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]fAllowToGetHelp";
+ ValueName = "fAllowToGetHelp";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource128ref
+{
+Key = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services";
+ ValueType = "String";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1541::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]fAllowUnsolicited";
+ ValueName = "fAllowUnsolicited";
+ ValueData = {
+    "0"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_RegistryResource as $MSFT_RegistryResource129ref
+{
+Key = "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon";
+ ValueType = "String";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1550::9::Registry";
+ Ensure = "Present";
+ ModuleName = "PsDesiredStateConfiguration";
+ ResourceID = "[Registry]ScreenSaverGracePeriod";
+ ValueName = "ScreenSaverGracePeriod";
+ ValueData = {
+    "5"
+};
+
+ModuleVersion = "1.0";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory1ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1559::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Failure";
+ Name = "Credential Validation";
+ ResourceID = "[AuditPolicySubcategory]Audit Credential Validation (Failure)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory2ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1566::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Success";
+ Name = "Credential Validation";
+ ResourceID = "[AuditPolicySubcategory]Audit Credential Validation (Success)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory3ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1573::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Failure";
+ Name = "Application Group Management";
+ ResourceID = "[AuditPolicySubcategory]Audit Application Group Management (Failure)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory4ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1580::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Success";
+ Name = "Application Group Management";
+ ResourceID = "[AuditPolicySubcategory]Audit Application Group Management (Success)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory5ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1587::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Failure";
+ Name = "Computer Account Management";
+ ResourceID = "[AuditPolicySubcategory]Audit Computer Account Management (Failure)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory6ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1594::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Success";
+ Name = "Computer Account Management";
+ ResourceID = "[AuditPolicySubcategory]Audit Computer Account Management (Success)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory7ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1601::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Failure";
+ Name = "Other Account Management Events";
+ ResourceID = "[AuditPolicySubcategory]Audit Other Account Management Events (Failure)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory8ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1608::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Success";
+ Name = "Other Account Management Events";
+ ResourceID = "[AuditPolicySubcategory]Audit Other Account Management Events (Success)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory9ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1615::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Failure";
+ Name = "Security Group Management";
+ ResourceID = "[AuditPolicySubcategory]Audit Security Group Management (Failure)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory10ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1622::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Success";
+ Name = "Security Group Management";
+ ResourceID = "[AuditPolicySubcategory]Audit Security Group Management (Success)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory11ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1629::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Failure";
+ Name = "User Account Management";
+ ResourceID = "[AuditPolicySubcategory]Audit User Account Management (Failure)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory12ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1636::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Success";
+ Name = "User Account Management";
+ ResourceID = "[AuditPolicySubcategory]Audit User Account Management (Success)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory13ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1643::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Success";
+ Name = "Plug and Play Events";
+ ResourceID = "[AuditPolicySubcategory]Audit PNP Activity (Success)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory14ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1650::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Success";
+ Name = "Process Creation";
+ ResourceID = "[AuditPolicySubcategory]Audit Process Creation (Success)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory15ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1657::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Success";
+ Name = "Account Lockout";
+ ResourceID = "[AuditPolicySubcategory]Audit Account Lockout (Success)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory16ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1664::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Failure";
+ Name = "Account Lockout";
+ ResourceID = "[AuditPolicySubcategory]Audit Account Lockout (Failure)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory17ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1671::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Success";
+ Name = "Group Membership";
+ ResourceID = "[AuditPolicySubcategory]Audit Group Membership (Success)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory18ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1678::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Success";
+ Name = "Logoff";
+ ResourceID = "[AuditPolicySubcategory]Audit Logoff (Success)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory19ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1685::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Success";
+ Name = "Logon";
+ ResourceID = "[AuditPolicySubcategory]Audit Logon (Success)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory20ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1692::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Failure";
+ Name = "Logon";
+ ResourceID = "[AuditPolicySubcategory]Audit Logon (Failure)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory21ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1699::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Failure";
+ Name = "Other Logon/Logoff Events";
+ ResourceID = "[AuditPolicySubcategory]Audit Other Logon/Logoff Events (Failure)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory22ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1706::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Success";
+ Name = "Other Logon/Logoff Events";
+ ResourceID = "[AuditPolicySubcategory]Audit Other Logon/Logoff Events (Success)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory23ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1713::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Success";
+ Name = "Special Logon";
+ ResourceID = "[AuditPolicySubcategory]Audit Special Logon (Success)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory24ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1720::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Success";
+ Name = "Removable Storage";
+ ResourceID = "[AuditPolicySubcategory]Audit Removable Storage (Success)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory25ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1727::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Failure";
+ Name = "Removable Storage";
+ ResourceID = "[AuditPolicySubcategory]Audit Removable Storage (Failure)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory26ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1734::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Success";
+ Name = "Audit Policy Change";
+ ResourceID = "[AuditPolicySubcategory]Audit Policy Change (Success)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory27ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1741::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Failure";
+ Name = "Audit Policy Change";
+ ResourceID = "[AuditPolicySubcategory]Audit Policy Change (Failure)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory28ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1748::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Success";
+ Name = "Authentication Policy Change";
+ ResourceID = "[AuditPolicySubcategory]Audit Authentication Policy Change (Success)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory29ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1755::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Success";
+ Name = "Authorization Policy Change";
+ ResourceID = "[AuditPolicySubcategory]Audit Authorization Policy Change (Success)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory30ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1762::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Failure";
+ Name = "Sensitive Privilege Use";
+ ResourceID = "[AuditPolicySubcategory]Audit Sensitive Privilege Use (Failure)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory31ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1769::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Success";
+ Name = "Sensitive Privilege Use";
+ ResourceID = "[AuditPolicySubcategory]Audit Sensitive Privilege Use (Success)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory32ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1776::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Failure";
+ Name = "IPsec Driver";
+ ResourceID = "[AuditPolicySubcategory]Audit IPsec Driver (Failure)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory33ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1783::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Success";
+ Name = "IPsec Driver";
+ ResourceID = "[AuditPolicySubcategory]Audit IPsec Driver (Success)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory34ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1790::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Failure";
+ Name = "Other System Events";
+ ResourceID = "[AuditPolicySubcategory]Audit Other System Events (Failure)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory35ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1797::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Success";
+ Name = "Other System Events";
+ ResourceID = "[AuditPolicySubcategory]Audit Other System Events (Success)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory36ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1804::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Success";
+ Name = "Security State Change";
+ ResourceID = "[AuditPolicySubcategory]Audit Security State Change (Success)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory37ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1811::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Failure";
+ Name = "Security State Change";
+ ResourceID = "[AuditPolicySubcategory]Audit Security System Extension (Failure)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory38ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1818::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Success";
+ Name = "Security State Change";
+ ResourceID = "[AuditPolicySubcategory]Audit Security System Extension (Success)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory39ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1825::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Failure";
+ Name = "System Integrity";
+ ResourceID = "[AuditPolicySubcategory]Audit System Integrity (Failure)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of MSFT_AuditPolicySubcategory as $MSFT_AuditPolicySubcategory40ref
+{
+ModuleVersion = "1.4.0.0";
+ SourceInfo = "C:\\Users\\scollinsonmhs\\Documents\\WindowsPowerShell\\GlobalDscConfig.ps1::1832::9::AuditPolicySubcategory";
+ Ensure = "Present";
+ ModuleName = "AuditPolicyDsc";
+ AuditFlag = "Success";
+ Name = "System Integrity";
+ ResourceID = "[AuditPolicySubcategory]Audit System Integrity (Success)";
+ ConfigurationName = "GlobalDscConfig";
+};
+instance of OMI_ConfigurationDocument
+
+                    {
+ Version="2.0.0";
+ 
+                        MinimumCompatibleVersion = "1.0.0";
+ 
+                        CompatibleVersionAdditionalProperties= {"Omi_BaseResource:ConfigurationName"};
+ 
+                        Author="scollinsonmhs";
+ 
+                        GenerationDate="08/30/2019 17:36:00";
+ 
+                        GenerationHost="GR2SMEMMGTV01";
+ 
+                        Name="GlobalDscConfig";
+
+                    };
